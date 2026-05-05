@@ -6,7 +6,7 @@ import { buildSubLayers } from "./geojsonBuilder";
 // Helper to parse KML to GeoJSON
 const kmlToGeoJSON = async (kmlString: string): Promise<any> => {
   try {
-    const toGeoJSON = (await import('togeojson')).default;
+    const toGeoJSON = (await import('@mapbox/togeojson')).default;
     const parser = new DOMParser();
     const kmlDom = parser.parseFromString(kmlString, 'text/xml');
     return toGeoJSON.kml(kmlDom);

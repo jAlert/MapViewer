@@ -11,23 +11,24 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run save-geojson-server\""
   },
   "dependencies": {
-    "@google/genai": "^1.30.0",
-    "cors": "^2.8.5",
+    "@google/genai": "^1.50.1",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "jszip": "^3.10.1",
     "leaflet": "^1.9.4",
-    "lucide-react": "^0.555.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-leaflet": "^5.0.0",
     "shpjs": "^6.2.0",
-    "togeojson": "^0.14.0"
+    "@mapbox/togeojson": "^0.16.2"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "baseline-browser-mapping": "^2.10.19",
     "concurrently": "^9.2.1",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "typescript": "~6.0.2",
+    "vite": "^8.0.8"
   }
 }

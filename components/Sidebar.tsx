@@ -532,7 +532,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                     {Object.entries(selectedFeature)
                       .filter(([key]) => {
                         // Show only selected fields, exclude specific ones
-                        const excludedKeys = ['Shape_Leng','Shape_Area','NOTES','CRS','Former_Nam','Remarks', 'WDPAID', 'PA_CODE', 'PA_CODE2', 'LegStatCod', 'Reg', 'Region', 'Status', 'PA_Name'];
+                        const excludedKeys = ['OBJECTID','Shape_Leng','Shape_Area','NOTES','CRS','Former_Nam','Remarks', 'WDPAID', 'PA_CODE', 'PA_CODE2', 'LegStatCod', 'Reg', 'Region', 'Status', 'PA_Name'];
                         return !excludedKeys.includes(key);
                       })
                       .map(([key, value]) => {
